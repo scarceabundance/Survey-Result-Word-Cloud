@@ -8,7 +8,6 @@ install.packages("tm")  # package for text mining
 install.packages("SnowballC") # package for text stemming
 install.packages("wordcloud") # word-cloud generator package
 install.packages("RColorBrewer") # color palettes package
-install.packages("Corpus")
 
 # Load packages
 library("tm")
@@ -59,7 +58,6 @@ docs <- tm_map(docs, removePunctuation)
 # most used keyword in OTHER descripton: court, theft, mail, contempt, order, violation, probation
 
 docs <- tm_map(docs, stripWhitespace)
-# Text stemming
 docs <- tm_map
 
 
